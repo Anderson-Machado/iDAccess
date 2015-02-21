@@ -37,20 +37,27 @@ namespace App2
             if (result is LoginResult)
             {
                 LoginResult dados = (LoginResult)result;
-                if(dados.session!=null)
-                    tInfo.Text="Sessão: " + dados.session;
+                if (dados.session != null)
+                    tInfo.Text = "Sessão: " + dados.session;
                 else
                     tInfo.Text = "Erro no Login: " + dados.error;
             }
-            else
+            else if (result != null)
                 tInfo.Text = "Erro Desconhecido: " + result;
+            else
+                tInfo.Text = "";
         }
 
         private void btRele_Click(object sender, RoutedEventArgs e)
         {
-            ActionsRequest ar = new ActionsRequest();
-            ar.actions = new ActionItem[] { new ActionItem() { action = "door", parameters = "door=1" } };
-            WebJson.JsonCommand("http://192.168.0.200/execute_actions.fcgi?session=" + WebJson.lr.session, ar, null);
+            if (WebJson.lr == null)
+                tInfo.Text = "Efetue login primeiro";
+            else
+            {
+                ActionsRequest ar = new ActionsRequest();
+                ar.actions = new ActionItem[] { new ActionItem() { action = "door", parameters = "door=1" } };
+                WebJson.JsonCommand("http://192.168.0.200/execute_actions.fcgi?session=" + WebJson.lr.session, ar, null);
+            }
         }
     }
 }

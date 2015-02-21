@@ -18,7 +18,7 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Margin="20,140,0,0"/>
         <TextBox x:Name="txtPassword" HorizontalAlignment="Left" TextWrapping="Wrap" Text="admin" VerticalAlignment="Top" Margin="20,160,0,0"/>
 
-        <TextBlock x:Name="tInfo" HorizontalAlignment="Left" TextWrapping="Wrap" Text="sessão" VerticalAlignment="Top" Margin="20,200,0,0"/>
+        <TextBlock x:Name="tInfo" HorizontalAlignment="Left" TextWrapping="Wrap" Text="sessão" VerticalAlignment="Top" Margin="20,220,0,0" FontSize="20"/>
         
         <Button x:Name="btEnter" Content="Logar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,260,0,0" Click="btEnter_Click"/>
 
