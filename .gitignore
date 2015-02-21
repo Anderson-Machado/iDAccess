@@ -1,0 +1,11 @@
+*.zip
+*.obj
+*.user
+*.vspscc 
+*.scc
+*.log
+Thumbs.db
+obj*/
+[Bb]in*/
+[Pp]ublish*/
+
