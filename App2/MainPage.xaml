@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="App2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="IP" VerticalAlignment="Top" Margin="20,20,0,0"/>
+        <TextBox x:Name="txtIP" HorizontalAlignment="Left" TextWrapping="Wrap" Text="192.168.0.200" VerticalAlignment="Top" Margin="20,40,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Login:" VerticalAlignment="Top" Margin="20,80,0,0"/>
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" TextWrapping="Wrap" Text="admin" VerticalAlignment="Top" Margin="20,100,0,0"/>
+
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Margin="20,140,0,0"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" TextWrapping="Wrap" Text="admin" VerticalAlignment="Top" Margin="20,160,0,0"/>
+
+        <TextBlock x:Name="tInfo" HorizontalAlignment="Left" TextWrapping="Wrap" Text="sessão" VerticalAlignment="Top" Margin="20,200,0,0"/>
+        
+        <Button x:Name="btEnter" Content="Logar" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,260,0,0" Click="btEnter_Click"/>
+
+        <Button x:Name="btRele" Content="Rele 1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,300,0,0" Click="btRele_Click"/>
+
+    </Grid>
+</Page>
